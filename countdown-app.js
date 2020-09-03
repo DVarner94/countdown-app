@@ -33,6 +33,7 @@ function updateCountdown () {
 // show spinner before countdown starts
 setTimeout(() => {
     loading.remove();
+    countdown.style.display = 'flex';
 }, 1000);
 
 
