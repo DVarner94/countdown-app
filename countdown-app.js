@@ -17,5 +17,7 @@ function updateCountdown () {
     const m = Math.floor(diff / 1000 / 60) % 60;
     const s = Math.floor(diff / 1000) % 60;
     // added % so that we get the given const's time remaining
+    console.log(s);
 }
 
+setInterval(updateCountdown, 1000);
