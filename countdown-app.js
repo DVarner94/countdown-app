@@ -17,7 +17,12 @@ function updateCountdown () {
     const m = Math.floor(diff / 1000 / 60) % 60;
     const s = Math.floor(diff / 1000) % 60;
     // added % so that we get the given const's time remaining
-    console.log(s);
+    days.innerHTML = d;
+    hours.innerHTML = h < 10 ? '0' + h : h;
+    minutes.innerHTML = m < 10 ? '0' + m : m;
+    seconds.innerHTML = s < 10 ? '0' + s : s;
+    // ^ternary operator... want a 0 in front of time if less than 10
+
 }
 
 setInterval(updateCountdown, 1000);
